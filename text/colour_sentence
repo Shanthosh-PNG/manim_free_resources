@@ -1,0 +1,8 @@
+from manim import *
+
+class text(Scene) : 
+    def construct(self) : 
+        text = Tex("THIS IS  A TEST TEXT.")
+        text.set_color(RED)
+        self.play(Write(text) , run_time = 3)
+        self.wait()
