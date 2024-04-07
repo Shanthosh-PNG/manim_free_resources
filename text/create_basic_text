@@ -1,1 +1,8 @@
+from manim import *
 
+class SimpleText(Scene) : 
+    def construct(self) : 
+        text = Text("HI")
+        self.play(Write(text) , run_time = 2) # run_time writes the text in the number of seconds mentioned
+        self.wait()
+        
