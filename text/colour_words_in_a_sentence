@@ -1,1 +1,11 @@
+from manim import *
 
+class colour(Scene) : 
+    def construct(self) : 
+        text = Text("THIS IS A TEST TEXT")
+        text[0 : 4].set_color(RED)
+        text[4 : 6].set_color(GREEN)
+        text[6].set_color(MAROON)
+        text[7 : 11].set_color(PURPLE)
+        text[11 : 15].set_color(ORANGE)
+        self.play(Write(text) , run_time = 3)
